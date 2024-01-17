@@ -5,12 +5,12 @@ Inspired by CLRS
 ## Progress
 
 **Completed**
-
-**In Progress**
 - Max Heap
 
-**Future Plans**
+**In Progress**
 - Red-Black Tree
+
+**Future Plans**
 - Hash Table
 - B-Tree
 - Fibonacci Heap

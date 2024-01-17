@@ -11,6 +11,5 @@ Inspired by CLRS
 - Red-Black Tree
 
 **Future Plans**
-- Hash Table
 - B-Tree
 - Fibonacci Heap

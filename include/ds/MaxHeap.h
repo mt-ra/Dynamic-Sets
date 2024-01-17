@@ -12,8 +12,10 @@ public:
     struct Element {
         Element(int k, T D) : key(k), satellite_data(D) {}
         int key;
-        size_t position;
         T satellite_data;
+
+        // set implementation
+        size_t position;
     };
 
     MaxHeap();

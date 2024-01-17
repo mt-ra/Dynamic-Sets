@@ -6,12 +6,13 @@ include_directories(src)
 include_directories(test)
 
 file(GLOB SOURCES
-    src/MaxHeap.cpp
+
 )
 
 file(GLOB TEST_SOURCES
     test/test_main.cpp
     test/test_MaxHeap.cpp
+    test/test_RedBlackTree.cpp
 )
 
 add_executable(app

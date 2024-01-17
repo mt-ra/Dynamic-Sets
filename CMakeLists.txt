@@ -3,7 +3,27 @@ project(Dynamic_Sets)
 
 include_directories(include)
 include_directories(src)
+include_directories(test)
+
+file(GLOB SOURCES
+    src/MaxHeap.cpp
+)
+
+file(GLOB TEST_SOURCES
+    test/test_main.cpp
+    test/test_MaxHeap.cpp
+)
 
 add_executable(app
+    ${SOURCES}
     src/main.cpp
 )
+
+enable_testing()
+
+add_executable(testapp
+    ${SOURCES}
+    ${TEST_SOURCES}
+)
+
+add_test(NAME COMPLETE_TEST COMMAND testapp)

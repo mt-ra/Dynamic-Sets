@@ -10,21 +10,25 @@ Template parameter `T` represents the type of the satellite data attached to eac
 
 ## Member Functions
 **Query Operations**
+---
 ```cpp
 std::shared_ptr<ds::MaxHeap<T>::Element> maximum();
 ```
 Returns a pointer to the element in the heap with the greatest key.
-
+---
 **Modifying Operations**
+---
 ```cpp
 void insert(std::shared_ptr<ds::MaxHeap<T>::Element> element);
 ```
 Given a pointer to an element, inserts element, maintaining heap structure.
+---
 
 ```cpp
-void delete(std::shared_ptr<ds::MaxHeap<T>::Element> element);
+void remove(std::shared_ptr<ds::MaxHeap<T>::Element> element);
 ```
 Given a pointer to an element, removes item, maintaining heap structure.
+---
 
 ## Example
 
